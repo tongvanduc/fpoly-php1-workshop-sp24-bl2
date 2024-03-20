@@ -99,16 +99,6 @@ $smith = array_filter($array2, function ($item) {
 });
 // print_r($smith);
 
-$smith2 = [];
-foreach ($array as $item) {
-    if (strpos($item['last_name'], 'Smith') !== false) {
-      return  $smith2[] = $item;
-    }
-} 
-print($smith2);
-
-
-
 $array3 = [
     ['id' => 5698, 'first_name' => 'Peter', 'last_name' => 'Griffin',],
     ['id' => 4767, 'first_name' => 'Ben1', 'last_name' => 'Smith HIhhi',],

@@ -72,6 +72,9 @@ $Smiths = array_filter($array, function ($item) {
 });
 print_r($Smiths);
 
+$Smith = array_filter($array, function ($item) {
+    return $item['last_name'] == 'Smith';
+});
 
 
 

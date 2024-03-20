@@ -40,6 +40,7 @@ $arrayColumn = array_column($array, 'two_name');
 
 // array combine
 $name = ['Ben', 'Jame', 'Josh'];
+$age =['1','2','3'];
 
 
 //array diff

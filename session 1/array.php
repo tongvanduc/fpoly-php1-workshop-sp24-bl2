@@ -38,7 +38,7 @@ print_r($arrCom);
 
 //https://www.w3schools.com/php/func_array_diff.asp
 // $files = scandir('./proof');
-// $files = array_diff($files, ['.', '..']);                 //array_diff() : So sánh các giá trị của hai mảng và trả về sự khác biệt
+// $files = array_diff($file, ['.', '..']);                 //array_diff() : So sánh các giá trị của hai mảng và trả về sự khác biệt
 // print_r($files);  
 
 // https://www.w3schools.com/php/func_array_keys.asp
@@ -58,6 +58,37 @@ print_r($keys);
 
 echo "VALUES".PHP_EOL;
 print_r($values);
+
+// https://www.w3schools.com/php/func_array_map.asp
+// Bảng user
+// "INSERT INTO users (`name`, `email`, `password`) VALUES ($virtualParams)"
+$data = [
+    'name' => 'NVA',
+    'email' => 'a@gmail.com',
+    'password' => 12345678
+];
+$keys = array_keys($data);
+
+$keys2 = array_map(function ($item) {
+    return "`$item`";
+}, $keys);
+
+$strKeys = implode(', ', $keys2);
+
+print_r($strKeys);
+
+// https://www.w3schools.com/php/func_array_filter.asp
+$a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+// $soChan = array_filter($a, function ($item) {
+//     return $item % 2 == 0;
+// });
+// print_r($soChan);
+
+$Smiths = array_filter($array, function ($item) {
+    return $item['last_name'] == 'Smith';
+});
+print_r($Smiths);
 
 
 

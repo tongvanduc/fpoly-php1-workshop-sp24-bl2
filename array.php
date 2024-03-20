@@ -96,10 +96,10 @@ $a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 // });
 // print_r($soChan);
 
-$Smiths = array_filter($array, function ($item) {
-    return $item['last_name'] == 'Smith';
-});
-print_r($Smiths);
+// $Smiths = array_filter($array, function ($item) {
+//     return $item['last_name'] == 'Smith';
+// });
+// print_r($Smiths);
 
 
 

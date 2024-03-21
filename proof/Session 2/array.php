@@ -38,7 +38,7 @@ print_r($arrCom);
 
 //https://www.w3schools.com/php/func_array_diff.asp
 // $files = scandir('./proof');
-// $files = array_diff($file, ['.', '..']);                 //array_diff() : So sánh các giá trị của hai mảng và trả về sự khác biệt
+// $files = array_diff($files, ['.', '..']);                 //array_diff() : So sánh các giá trị của hai mảng và trả về sự khác biệt
 // print_r($files);
 
 // https://www.w3schools.com/php/func_array_keys.asp

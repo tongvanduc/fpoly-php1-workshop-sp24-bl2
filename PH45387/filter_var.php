@@ -6,12 +6,14 @@ echo "<pre>";
 // Bắt buộc có dữ liệu
 
 $data = [
+    'title' => 'xuongphp',
     'email' => 'ahihi@gmail.com',
     'home_ip' => '1.2.5.6'
 ];
 
-$rule = [
-    'title' => 'required|email',
+$rules = [
+    'title' => 'required|title',
+    'email' => 'required|email',
     'home_ip' => 'required|ip',
 ];
 
@@ -37,9 +39,9 @@ function ip($field, $value) {
 
 function validate($rules, $data) {
     foreach ($data as $field => $value) {
-        $rule = $rules[$field];
+        $rules = $rules[$field];
 
-        $arrRule = explode('|', $rule);
+        $arrRule = explode('|', $rules);
 
         foreach ($arrRule as $rule) {
             $rule($field, $value);

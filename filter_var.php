@@ -17,6 +17,10 @@ function email($field, $value) {
         $_SESSION['errors'][] = "Trường $field không đúng định dạng email";
     }
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7218ae10f4b4003a1748e39fb938248d5e8dd313
 // IP
 function ip($field, $value) {
     if (! filter_var($value, FILTER_VALIDATE_IP)) {

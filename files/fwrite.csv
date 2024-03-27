@@ -1,4 +1,5 @@
 name,email,phone
+<<<<<<< HEAD
 Nguyễn Văn A,a@gmail.com,135521445
 Nguyễn Văn A,a@gmail.com,135521445
 Nguyễn Văn A,a@gmail.com,135521445
@@ -13,3 +14,9 @@ Nguyễn Văn A,a@gmail.com,135521445
 Nguyễn Văn A,a@gmail.com,135521445
 Nguyễn Văn A,a@gmail.com,135521445
 Nguyễn Văn A,a@gmail.com,135521445
+=======
+Nguyễn Văn A,a@gmail.com,0928887989
+Nguyễn Văn B,b@gmail.com,0928887989
+Nguyễn Văn C,c@gmail.com,0928887989
+Nguyễn Văn D,d@gmail.com,0928887989
+>>>>>>> 7218ae10f4b4003a1748e39fb938248d5e8dd313

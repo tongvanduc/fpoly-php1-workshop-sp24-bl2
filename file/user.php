@@ -1,5 +1,5 @@
 <?php
-
+echo "<pre>";
 $servername = "localhost";
 $host = "3306";
 $username = "root";
@@ -15,10 +15,9 @@ try {
     $sql = "SELECT * FROM users";
     $stmt = $conn->prepare($sql);
     $stmt->execute();
-
     // Tạo file csv và ghi dữ liệu vào
-    $fp = fopen('./user.csv', "a+");
-    // Viết dong tiêu đề
+    $fp = fopen('./user.csv', "w+");
+    // // Viết dong tiêu đề
     $column = array('name', 'email', 'phone', 'created_id', 'update_id');
     fputcsv($fp, $column);
     // Ghi dữ liệu từ câu truy vấn 

@@ -5,10 +5,7 @@ echo "<pre>";
 $fp = @fopen('./data.csv', "w+");
 
 $data = [
-    ['name' => 'Nguyễn Văn A', 'email' => 'a@gmail.com', 'phone' => '0123456789', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s')], 
-    ['name' => 'Nguyễn Văn B', 'email' => 'b@gmail.com', 'phone' => '0123456789', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s')],
-    ['name' => 'Nguyễn Văn C', 'email' => 'c@gmail.com', 'phone' => '0123456789', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s')],
-    ['name' => 'Nguyễn Văn D', 'email' => 'd@gmail.com', 'phone' => '0123456789', 'created_at' => date('Y-m-d H:i:s'), 'updated_at' => date('Y-m-d H:i:s')]
+    
 ];
 
 // Kiểm tra file mở thành công không
